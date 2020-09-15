@@ -64,4 +64,10 @@ In `_output.yml`, on the line following `in_header: preamble.tex` we want to add
 \frontstuff
 ```
 
+Into `preamble.tex` add:
+```
+\usepackage[phd]{otagothesis}     %% Use Otago page layout
+```
+This will tell LaTeX to use the Otago style
+
 I also recommend adding `new_session: true` into `_bookdown.yml`. It means that each chapter gets compiled in a new R session. It can be a pain if you want to refer to objects that were created in previous chapters but it does mean that only within a chapter do your R code chunk names need to be unique, rather than across the entire book.
