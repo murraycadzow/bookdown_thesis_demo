@@ -10,7 +10,10 @@ bookdown::gitbook:
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
+    before_body: frontstuff.tex
+  toc: false
   latex_engine: xelatex
   citation_package: natbib
+  #template: otago-thesis-latex-template-master/thesis.tex
   keep_tex: yes
 bookdown::epub_book: default

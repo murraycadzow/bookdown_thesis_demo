@@ -1,3 +1,6 @@
 .Rhistory
 .RData
 .Rproj.user
+_book/
+*.aux
+_bookdown_files/
